@@ -2,11 +2,11 @@ import java.util.Scanner;
 
 public class CLASS
 {
-    public static void main(String[] args)
+    public static void main(String args[])
     {
         Scanner scnr = new Scanner(System.in);
-        int month;
-        int day;
+        int month = 0;
+        int day = 0;
         boolean valid = false;
 
         System.out.println("Hi, Welcome to Six Flags Theme Park!");
@@ -38,10 +38,10 @@ public class CLASS
         return valid;
     }
 
-    public static double calculateTicketPrice(int month, int day)
+    public static void calculateTicketPrice(int month, int day)
     {
         boolean isHoliday = true;
-        String holiday;
+        String holiday = "";
         if (month == 1 && day == 1) {
             holiday = "New Years";
         }
